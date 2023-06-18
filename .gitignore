@@ -1,0 +1,8 @@
+.cache
+node_modules
+.env
+/env
+src/images/resized
+src/images/webps
+/dist
+dist

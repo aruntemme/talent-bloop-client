@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+</head>
+
+<body>
+  <header>
+    <!-- bootstrap header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Pawga Admin</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <div class="form-inline my-2 my-lg-0">
+          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">
+            Logout
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- bootstrap login form -->
+  <div class="row h-100 mt-3">
+    <div class="col-md-3">sidebar</div>
+    <div class="col-md-9">
+      <div>
+        <div>
+          <div class="mr-3">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="city" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="description">Description</label>
+              <textarea rows="4" class="form-control" id="description"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="date">Date and Time</label>
+              <input type="date" class="form-control" id="date" />
+            </div>
+            <div class="form-group">
+              <label for="address">Address</label>
+              <input type="text" class="form-control" id="address" placeholder="No. Apartment, City" />
+            </div>
+            <div class="form-group">
+              <label for="mapLink">Map link</label>
+              <input type="text" class="form-control" id="mapLink" placeholder="https://goo.gl/maps/..." />
+            </div>
+            <!-- <div class="form-group">
+              <label for="ticketType"
+                >Select Ticket Types</label
+              >
+
+            <select class="form-control multiple-checkboxes selectpicker" multiple data-live-search="true" id="ticketType">
+              <option value="1">Solo $22</option>
+              <option value="2">Couple $36</option>
+              <option value="3">Kids $16</option>
+            </select>
+          </div> -->
+            <div class="form-group">
+              <label for="ticketCount" class="d-block">Ticket Count</label>
+              <input type="number" class="form-control" id="ticketCount" />
+            </div>
+            <hr />
+            <h4>Tickets</h4>
+            <div class="row" id="ticketsList">
+              <div class="col-md-3 col-lg-3 p-0 pointer-cursor mr-2" data-toggle="modal" data-target="#addTicketModal" >
+              <div class="card mb-3 p-0">
+                <div class="card-body">
+                  ADD +
+                </div>
+              </div>
+            </div>
+            </div>
+            <!-- <button class="btn btn-primary btn-sm" id="triggerAddTicketModal">Add Ticket</button> -->
+            <div class="form-row mt-3">
+              <div class="input-group control-group after-add-more">
+                <input type="text" name="addmore[]" class="form-control" placeholder="Enter Name Here" />
+                <div class="input-group-btn">
+                  <button class="btn btn-success add-more" id="addBatch" type="button">
+                    <i class="glyphicon glyphicon-plus"></i> Add
+                  </button>
+                </div>
+              </div>
+              <!-- Copy Fields -->
+              <div id="copyBatch" class="copy hide">
+                <div class="control-group input-group" style="margin-top: 10px">
+                  <!-- from - to time picker -->
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">From</span>
+                  </div>
+                  <input type="text" name="addmore[]" class="form-control timepicker" placeholder="HH:MM" />
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">To</span>
+
+                    <div class="input-group-btn">
+                      <button class="btn btn-danger remove" id="removeBatch" type="button">
+                        <i class="glyphicon glyphicon-remove"></i> Remove
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="eventActionFiller">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="addTicketModal" tabindex="-1" role="dialog" 
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Add Ticket
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">
+                &times;
+              </span>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="ticketName">Name</label>
+                <input type="text" class="form-control" id="ticketName" />
+              </div>
+              <div class="form-group">
+                <label for="ticketDescription">Description</label>
+                <textarea rows="4" class="form-control" id="ticketDescription"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="ticketWeight">Weight</label>
+                <input type="number" class="form-control" id="ticketWeight" />
+              </div>
+              <div class="form-group">
+                <label for="ticketPrice">Price</label>
+                <input type="number" class="form-control" id="ticketPrice" />
+              </div>
+              <div class="form-group">
+                <label for="ticketDiscount">Discount</label>
+                <input type="number" class="form-control" id="ticketDiscount" />
+              </div>
+            </form>
+            <div id="errorDiv"></div>
+          </div>
+          <div class="modal-footer">
+            <div id="ticketActionFiller">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

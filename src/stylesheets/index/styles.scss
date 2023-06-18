@@ -1,0 +1,46 @@
+@use "../common/base/typography";
+@use "../common/base/_mixins" as globalMix;
+@use "../common/themes/_default" as globalTheme;
+@use "../common/components/header-new";
+
+body {
+  // background: #e8fbff;
+}
+
+.user-details {
+  display: none !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.hero-text {
+  font-size: 80px;
+  font-weight: 300;
+}
+
+.hero-text strong {
+  font-weight: 600;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.image-container img {
+  max-width: 10%;
+  height: auto;
+  flex-shrink: 0;
+  margin-right: 1rem;
+}
+
+// #events {
+//   background: linear-gradient(180deg, rgba(69, 62, 161, 0.2) 0%, rgba(151, 71, 255, 0.2) 100%);
+// }

@@ -1,0 +1,75 @@
+// main color system - start
+
+$body-bg: #f6f6f9;
+$primary-color: #0dba4b;
+$rating-golden-color: #ffdf0c;
+$white: #fff;
+$grey: #e3e3e3;
+$black: #000;
+$list-color: #c7d4ee;
+$purple: #7a17eb;
+$dim-color: #eef1f8;
+$heavy-dim-color: #95a4c2;
+$dark-color: #132241;
+$dim-dark-color: #4c5a74;
+$nav-image-color: #f1e8f9;
+$nav-border-color: #ccc;
+$nav-score-border-color: #dee2e6;
+$whatsapp-color: #25d366;
+$facebook-color: #4267b2;
+$twitter-color: #1da1f2;
+$telegram-color: #08c;
+$background: #f6f7f8;
+$background-color: #dddada;
+$line-color: #b7b7b7;
+$danger-color: #bd2f25;
+$succes-color: #0dba4b;
+// spacing
+$spacing-xxs: 4px;
+$spacing-xs: 8px;
+$spacing-sm: 12px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-xxl: 48px;
+$spacing-xxxl: 64px;
+
+// breakpoints
+$breakpoint-xs: 320px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1600px;
+
+// font in rem
+$font-size-xxs: 0.625rem;
+$font-size-xs: 0.75rem;
+$font-size-sm: 0.875rem;
+$font-size-md: 1rem;
+$font-size-lg: 1.125rem;
+$font-size-xl: 1.25rem;
+$font-size-xxl: 1.5rem;
+$font-size-xxxl: 2rem;
+$font-size-4xl: 2.5rem;
+$font-size-5xl: 3rem;
+$font-family: 'Roboto', sans-serif;
+
+// font weight
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+// border
+$border-radius: 4px;
+$border-radius-sm: 2px;
+$border-radius-md: 8px;
+$border-radius-lg: 12px;
+$border-radius-xl: 16px;
+$border-radius-xxl: 24px;
+$border-radius-xxxl: 32px;
+
+// box-shadow
+$box-shadow: 0 0 0.3rem rgba($black, 0.075);

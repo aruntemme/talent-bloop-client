@@ -1,0 +1,71 @@
+%star {
+  flex: 25%;
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-right: 12px solid transparent;
+  border-bottom: 9px solid;
+  border-left: 12px solid transparent;
+  transform: rotate(35deg);
+  margin: 0 0.125rem;
+
+  &:before {
+    border-bottom: 9px solid;
+    border-left: 4px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -5px;
+    left: -7px;
+    display: block;
+    content: '';
+    transform: rotate(-32deg);
+  }
+
+  &:after {
+    position: absolute;
+    display: block;
+    color: red;
+    top: 0;
+    left: -12px;
+    width: 0;
+    height: 0;
+    border-right: 12px solid transparent;
+    border-bottom: 9px solid;
+    border-left: 12px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+  }
+}
+
+%font-awesome {
+  font-family: "Font Awesome 5 Free", sans-serif;
+}
+
+%font-awesome-brand {
+  font-family: "Font Awesome 5 Brands", sans-serif;
+}
+
+%font-fas {
+  @extend %font-awesome;
+
+  font-weight: 900;
+}
+
+%font-far {
+  @extend %font-awesome;
+
+  font-weight: 400;
+}
+
+%font-fab {
+  @extend %font-awesome-brand;
+
+  font-weight: 400;
+}
+
+%z-5 {
+  z-index: 5;
+}

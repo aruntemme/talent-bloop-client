@@ -1,0 +1,260 @@
+@use "../common/base/typography";
+@use "../common/base/_mixins" as globalMix;
+@use "../common/themes/_default" as globalTheme;
+
+body {
+  background: #eef1f8;
+}
+
+.hide {
+  display: none !important;
+}
+
+p,
+label {
+  color: #7e7ea1;
+  font-size: 1rem;
+}
+
+h3 {
+  color: #323e53;
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.scroll-bar-right {
+  min-height: 58vh;
+  max-height: 58vh;
+  overflow-y: auto;
+}
+
+.blue-col {
+  color: #6249f7;
+}
+
+.login-register-forgot {
+  .blue-col {
+    color: #6249f7;
+  }
+
+  .blue-col-bg {
+    background: #6249f7;
+    color: #fff;
+  }
+
+  h3 {
+    color: #323e53;
+    font-weight: 600;
+    font-size: 19px;
+  }
+
+  .forgot-right {
+    display: block;
+    text-align: right;
+  }
+
+  .resend-code {
+    border: 1px solid #5a7097;
+    color: #5a7097;
+  }
+
+  .editEmail {
+    position: absolute;
+    color: #6249f7;
+    top: 2.4rem;
+    right: 1rem;
+  }
+
+  .bg-lights {
+    background: #eef1f8;
+    color: #323e53;
+  }
+
+  .eyeIcon {
+    color: #95a4c2;
+  }
+}
+
+.test-plan-center {
+  text-align: center;
+}
+
+.activeicon {
+  color: #6f6ef7;
+}
+
+.tabicon {
+  width: 75%;
+  margin: auto;
+}
+
+.activetabline {
+  border: 1px solid #b3b7bd;
+  width: 100%;
+  margin: 0;
+  margin-top: 7px;
+}
+
+.totalDuration {
+  li {
+    list-style: none;
+    width: 33.3%;
+
+    p {
+      color: #1d3b70;
+
+      strong {
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+    }
+
+    span {
+      color: #1d3b70;
+      font-weight: 500;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.totalDurationSize {
+  li {
+    list-style: none;
+    width: 25%;
+  }
+}
+
+.languages {
+  a {
+    color: #1d3b70;
+  }
+}
+
+h6 {
+  color: #adb5bd;
+  font-weight: 400;
+}
+
+.activetab {
+  width: 50%;
+  margin: auto;
+  display: table;
+  text-align: center;
+}
+
+.card-body {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.resend-code {
+  border: 1px solid #5a7097;
+  color: #5a7097;
+}
+
+.bg-lights {
+  background: #eef1f8;
+  color: #323e53;
+}
+
+.blue-col-bg {
+  background: #6249f7;
+  color: #fff;
+}
+
+.questionsbox {
+  a {
+    background: #eef1f8;
+    padding: 11px 0;
+    width: 50px;
+    height: 45px;
+    text-align: center;
+    border-radius: 4px;
+    color: #1d3b70;
+    font-weight: 600;
+    margin-left: 1.7rem;
+  }
+
+  .attended {
+    background: #8e9eb9;
+    color: #fff;
+  }
+
+  .marked {
+    background: #fcbf07;
+    color: #fff;
+  }
+
+  .Current {
+    background: #6249f7;
+    color: #fff;
+  }
+}
+
+.guestionlist {
+  p {
+    i {
+      margin-right: 0.5rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  .currbg {
+    i {
+      color: #6249f7;
+    }
+  }
+
+  .attendbg {
+    i {
+      color: #8e9eb9;
+    }
+  }
+
+  .marketbg {
+    i {
+      color: #fcbf07;
+    }
+  }
+
+  .yetbg {
+    i {
+      color: #eef1f8;
+    }
+  }
+}
+
+.submittest {
+  margin: auto;
+  display: table;
+}
+
+.passedalert {
+  width: 30%;
+  margin: auto;
+  display: table;
+  text-align: center;
+  height: 75vh;
+  margin-top: 3rem;
+
+  img {
+    width: 50px;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.Passwordchangemodal {
+  height: auto !important;
+  margin-top: 0 !important;
+}
+
+.ragngeSlider {
+  width: 50%;
+  display: table;
+  margin: auto;
+
+  h5 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}

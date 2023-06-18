@@ -1,0 +1,125 @@
+.login-fill-image {
+  object-fit: contain;
+}
+
+.custom-card {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding-top: 20px;
+  border: 1px solid #000;
+
+  img {
+    margin: auto;
+    border-radius: 50%;
+    width: 60%;
+    height: 38%;
+    border: 2px solid #000;
+  }
+}
+
+.custom-btn {
+  background-color: #cef14c;
+  color: #000;
+  border: none;
+}
+
+.custom-btn:hover {
+  background-color: #000;
+  color: #cef14c;
+  border: 1px solid #cef14c;
+}
+
+.custom-btn:focus {
+  background-color: #000;
+  color: #cef14c;
+  border: 1px solid #cef14c;
+}
+
+.custom-btn:active {
+  background-color: #000;
+  color: #cef14c;
+  border: 1px solid #cef14c;
+}
+
+.custom-btn:disabled {
+  background-color: #000;
+  color: #cef14c;
+  border: 1px solid #cef14c;
+}
+
+.custom-btn:visited {
+  background-color: #000;
+  color: #cef14c;
+  border: 1px solid #cef14c;
+}
+
+.custom-btn-outline {
+  background-color: #000;
+  color: #cef14c;
+  border: 1px solid #cef14c;
+}
+
+
+
+.searchbox-wrap {
+  display: flex;
+  width: 500px;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #000;
+  border-radius: 25px;
+
+  input {
+    flex: 1;
+    padding: 30px 20px;
+    font-size: 1.1em;
+
+    -webkit-border-top-left-radius: 25px;
+    -webkit-border-bottom-left-radius: 25px;
+    -moz-border-radius-topleft: 25px;
+    -moz-border-radius-bottomleft: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    box-shadow: none;
+    border: none;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.19);
+  }
+
+  button {
+    padding-right: 10px;
+
+    background-color: #fff;
+    -webkit-border-top-right-radius: 25px;
+    -webkit-border-bottom-right-radius: 25px;
+    -moz-border-radius-topright: 25px;
+    -moz-border-radius-bottomright: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.19);
+    border: none;
+    cursor: pointer;
+    cursor: hand;
+
+    span {
+      margin-left: 50px;
+      padding: 24px 45px;
+
+      font-size: 0.9em;
+      text-transform: uppercase;
+      font-weight: 300;
+      color: #000;
+      background-color: #cef14c;
+
+      border-radius: 20px;
+      box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.19);
+
+      &:hover {
+        background-color: #000;
+        color: #cef14c;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.19);
+      }
+    }
+  }
+}

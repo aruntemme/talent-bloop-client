@@ -1,0 +1,27 @@
+$enable-rounded: true !default;
+
+// Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  ss: 380px,
+  sm: 576px,
+  md: 768px,
+  ml: 900px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px
+) !default;
+
+$container-max-widths: (
+  ss: 380px,
+  sm: 576px,
+  md: 768px,
+  ml: 900px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px
+);
+
+// stylelint-disable value-keyword-case
+$fallback-fonts: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+// stylelint-enable value-keyword-case

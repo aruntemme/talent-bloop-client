@@ -1,0 +1,34 @@
+@use "../themes/_default" as globalTheme;
+@use "../base/_mixins" as globalMix;
+
+* {
+  outline: none;
+}
+
+header {
+  box-shadow: none !important;
+  background: #e9ecf3;
+
+  .navbar-brand {
+    img {
+      width: 40px;
+    }
+  }
+
+  .dropdown-menu.show {
+    transform: translate3d(-5px, 41px, 0) !important;
+    left: -103px !important;
+  }
+}
+
+.user-details {
+  padding-top: 8px;
+
+  img {
+    border-radius: 30px;
+  }
+
+  .dropdown-toggle:after {
+    margin-left: 10px;
+  }
+}
