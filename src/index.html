@@ -8,14 +8,35 @@
   <!-- <script type="module"  src="/components/bone-button.js"></script> -->
 </head>
 <body>
-  <header>header</header>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/">Talent Bloop</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/talents">Talents</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/search">Search</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Try if for free</button>
+        </form>
+      </div>
+    </nav>
+  </header>
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center">
+    <section id="hero" class="d-flex align-items-center mt-4">
 
-      <div class="container">
+      <div class="container mt-4">
         <div class="row">
           <div class="col-lg-7 order-1 order-lg-1 hero-img" data-aos="zoom-in" data-aos-delay="200">
-            <!-- <img src="/images/tm/superhero.jpg" class="img-fluid animated" alt=""> -->
+            <img src="/images/tm/superhero.jpg" class="img-fluid animated" alt="">
           </div>
           <div class="col-lg-5 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-2" data-aos="fade-up" data-aos-delay="200">
             <h1 class="hero-text">Find Talents <br>
@@ -27,14 +48,15 @@
     </section><!-- End Hero -->
 
     <section id="events" class="d-flex align-items-center">
-
-      <div class="container">
-       <h2>Events Near You</h2>
-      </div>
   
     </section>
 
-  <section>2</section>
-  <section>3</section>
+  <section><div class="container mt-4">
+    <div class="row d-flex justify-content-center">
+      <div class=" order-1 order-lg-1 hero-img" data-aos="zoom-in" data-aos-delay="200">
+        <h2>Talent Search Engine </h2>
+      </div>
+    </div>
+  </div></section>
 </body>
 </html>
